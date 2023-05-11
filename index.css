@@ -12,8 +12,8 @@ body{
     display: flex;
     align-items: center;
     animation-name: slideUp;
-    animation-duration: 2s;
-    animation-delay: 2s;
+    animation-duration: 0s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     position: fixed;
     z-index: 9999;
@@ -38,8 +38,8 @@ body{
     border: 2px solid #3BBA9C;
     border-radius: 50%;
     animation-name: hideMonkey;
-    animation-duration: 2s;
-    animation-delay: 2s;
+    animation-duration: 0s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
   }
   
@@ -109,14 +109,19 @@ body{
 }
 
 .unhoveredContent {
+    margin: 5px;
     opacity: 1;
     z-index: 2000;
+    width: 450px;
+    transition: opacity 0.5s ease;
 }
 
 .hoveredContent {
+    margin: 5px;
     opacity: 0;
-    z-index: 1000;
+    z-index: 2001;
     transition: opacity 0.5s ease;
+    width: auto;
 }
 
 .contentBox:hover .unhoveredContent {
@@ -160,4 +165,69 @@ footer {
     bottom: 0;
     width: 100%;
   }
-  
+
+  .boxHeaderText{
+    font-weight: bold;
+    font-size: 30px;
+    color: #3BBA9C;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+
+  .boxContent{
+    display: flex;
+  }
+
+  .boxInnerText{
+    font-weight: normal;
+    font-size: 20px;
+    color:azure;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+
+
+#computerCatGif{
+  margin-top: -30px;
+  padding-left: 0;
+  height: 160px;
+  width: 100px;
+
+}
+
+
+.boxHeaderTextHovered{
+  font-weight: bold;
+  font-size:50px;
+  color: #3BBA9C;
+  margin-top: 0;
+  margin-left: 5px;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.boxContentHovered{
+  display: flex;
+}
+
+.boxInnerTextHovered{
+  font-weight: normal;
+  font-size: 20px;
+  color:azure;
+  margin-top: 0;
+  margin-left: 5px;
+  width: 50%;
+}
+
+#itesmLogo{
+  width: 270px;
+}
+
+.logo{
+  width: 75px;
+  margin: 10px;
+}
+
+#pfp2{
+  width: 100px;
+}
