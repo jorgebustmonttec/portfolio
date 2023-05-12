@@ -5,62 +5,13 @@ body{
     padding: 0;
 }
 
-.header {
-    background-color: #2E3047;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    animation-name: slideUp;
-    animation-duration: 0s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-  }
-  
-  @keyframes slideUp {
-    0% {
-      
-      transform: translateY(0);
-    }
-    100% {
-      height: 150px;
-      transform: translateY(0px);
-    }
-  }
-
-  #monkeygif {
-    margin-left: 100px;
-    height: 500px;
-    width: 500px;
-    border: 2px solid #3BBA9C;
-    border-radius: 50%;
-    animation-name: hideMonkey;
-    animation-duration: 0s;
-    animation-delay: 0s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes hideMonkey {
-    0% {
-      opacity: 1;
-
-    }
-    100% {
-        opacity: 0;
-        height: 1px;
-        width: 1px;
-        transform: translate(100%, -100%);
-    }
-  }
 
 .headerText{
     font-weight: bold;
     font-size: 50px;
     color: #3BBA9C;
     margin: 0;
+    width: 500px;
 }
 
 #headerTextContainer{
@@ -199,7 +150,7 @@ footer {
 
 .boxHeaderTextHovered{
   font-weight: bold;
-  font-size:50px;
+  font-size:40px;
   color: #3BBA9C;
   margin-top: 0;
   margin-left: 5px;
@@ -252,4 +203,107 @@ footer {
 
 .projectsUnhovered{
   display: block;
+}
+
+.buttonAbout{
+  background-color: #3BBA9C;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.header {
+  background-color: #2E3047;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+}
+#monkeygifeat {
+  margin-left: 100px;
+  height: 500px;
+  width: 500px;
+  border: 2px solid #3BBA9C;
+  border-radius: 50%;
+}
+
+.hideAnimation {
+  animation-name: hideMonkey;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    
+    transform: translateY(0);
+  }
+  100% {
+    height: 150px;
+    transform: translateY(0px);
+  }
+}
+
+
+
+@keyframes hideMonkey {
+  0% {
+    opacity: 1;
+
+  }
+  100% {
+      opacity: 0;
+      height: 1px;
+      width: 1px;
+  }
+}
+
+.reverse {
+  animation-name: reverseSlideUp;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.reversemonkey {
+  animation-name: showMonkey;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showMonkey {
+  0% {
+    opacity: 0;
+    height: 1px;
+    width: 1px;
+  }
+  100% {
+      opacity: 1;
+      height: 500px;
+      width: 500px;
+  }
+}
+
+
+@keyframes reverseSlideUp {
+  0% {
+    transform: translateY(0);
+    height: 150px;
+  }
+  100% {
+    height: 100vh;
+  }
 }
