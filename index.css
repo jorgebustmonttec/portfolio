@@ -12,8 +12,8 @@ body{
     display: flex;
     align-items: center;
     animation-name: slideUp;
-    animation-duration: 2s;
-    animation-delay: 2s;
+    animation-duration: 0s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
     position: fixed;
     z-index: 9999;
@@ -38,8 +38,8 @@ body{
     border: 2px solid #3BBA9C;
     border-radius: 50%;
     animation-name: hideMonkey;
-    animation-duration: 2s;
-    animation-delay: 2s;
+    animation-duration: 0s;
+    animation-delay: 0s;
     animation-fill-mode: forwards;
   }
   
