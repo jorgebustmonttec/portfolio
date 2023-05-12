@@ -5,8 +5,9 @@ const buttonFirebase = document.getElementById("buttonFirebase");
 const buttonSql = document.getElementById("buttonSql");
 const header = document.getElementById("header");
 const monkey = document.getElementById("monkeygifeat");
+console.log(monkey)
 
-const animationTime = 2000;
+const animationTime = 1000;
 
 
 function reverseanimation(){
@@ -17,7 +18,10 @@ function reverseanimation(){
 
 buttonFirebase.addEventListener("click", function(){
     reverseanimation();
-
+    setTimeout(function(){
+        window.location.href = "./iot.html";
+    }
+    , animationTime);
 });
 
 buttonDiscord.addEventListener("click", function(){

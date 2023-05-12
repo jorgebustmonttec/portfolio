@@ -11,6 +11,7 @@ body{
     font-size: 50px;
     color: #3BBA9C;
     margin: 0;
+    width: 500px;
 }
 
 #headerTextContainer{
@@ -222,8 +223,8 @@ footer {
   display: flex;
   align-items: center;
   animation-name: slideUp;
-  animation-duration: 2s;
-  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
   position: fixed;
   z-index: 9999;
@@ -235,9 +236,12 @@ footer {
   width: 500px;
   border: 2px solid #3BBA9C;
   border-radius: 50%;
+}
+
+.hideAnimation {
   animation-name: hideMonkey;
-  animation-duration: 2s;
-  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -268,7 +272,7 @@ footer {
 
 .reverse {
   animation-name: reverseSlideUp;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }
@@ -276,7 +280,7 @@ footer {
 .reversemonkey {
   animation-name: showMonkey;
   animation-delay: 0s;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 

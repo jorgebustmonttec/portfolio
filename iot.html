@@ -4,25 +4,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Papu portafolio</title>
-    <script src="./index.js"></script>
+
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="header">
+    <div class="header" id="header">
       <div id="pfp">
         <img id="pfp" src="./images/iot.png" alt="pfp" />
       </div>
       <div id="headerTextContainer">
         <p class="headerText" id="nombreHeader">Pagina Iot</p>
-        <a class="linkRegresar" href="index.html">regresar</a>
+        <button class="buttonAbout" id="linkRegresar">Regresar</button>
       </div>
-      <div>
-        <img
-          id="monkeygif"
-          src="./images/monkey-eating-taco.gif"
-          alt="monkey"
-        />
-      </div>
+      <img
+        id="monkeygifeat"
+        class="hideAnimation"
+        src="./images/monkey-eating-taco.gif"
+        alt="monkey"
+      />
     </div>
     <div id="bordergifs">
       <img id="catjump" src="./images/transparent-cat.gif" />
@@ -49,5 +48,6 @@
     <footer>
       <p>&copy; 2023 Papu Portafolio. All rights reserved.</p>
     </footer>
+    <script src="about.js"></script>
   </body>
 </html>
